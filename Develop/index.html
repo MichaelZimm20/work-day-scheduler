@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -27,12 +29,124 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <!--TODO: add clear entire day button-->
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <!-- 9am -->
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour justify-content-end">9AM</span>
+          </div>
+          <textarea class="form-control" aria-label="textarea" id="9AM"></textarea>
+          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
+        </div>
+      </div>
+
+       <!-- 10am -->
+       <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour justify-content-end">10AM</span>
+          </div>
+          <textarea class="form-control" aria-label="textarea" id="10AM"></textarea>
+          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
+        </div>
+      </div>
+
+      <!-- 11am -->
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour justify-content-end">11AM</span>
+          </div>
+          <textarea class="form-control" aria-label="textarea" id="11AM"></textarea>
+          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
+        </div>
+      </div>
+
+      <!-- 12PM -->
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour justify-content-end">12PM</span>
+          </div>
+          <textarea class="form-control" aria-label="textarea" id="12PM"></textarea>
+          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
+        </div>
+      </div>
+      
+      <!-- 1PM -->
+      <div class="row">
+       <div class="input-group">
+         <div class="input-group-prepend">
+           <span class="input-group-text hour justify-content-end">1PM</span>
+         </div>
+         <textarea class="form-control" aria-label="textarea" id="1PM"></textarea>
+         <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
+       </div>
+     </div>
+
+      <!-- 2PM -->
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour justify-content-end">2PM</span>
+          </div>
+          <textarea class="form-control" aria-label="textarea" id="2PM"></textarea>
+          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
+        </div>
+      </div>
+
+       <!-- 3PM -->
+       <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour justify-content-end">3PM</span>
+          </div>
+          <textarea class="form-control" aria-label="textarea" id="3PM"></textarea>
+          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
+        </div>
+      </div>
+
+       <!-- 4PM -->
+       <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour justify-content-end">4PM</span>
+          </div>
+          <textarea class="form-control" aria-label="textarea" id="4PM"></textarea>
+          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
+        </div>
+      </div>
+
+       <!-- 5PM -->
+       <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour justify-content-end">5PM</span>
+          </div>
+          <textarea class="form-control" aria-label="textarea" id="5PM"></textarea>
+          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
