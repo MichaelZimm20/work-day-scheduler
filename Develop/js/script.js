@@ -1,8 +1,4 @@
 
-// Global Variables 
-
-
-
 // current time in the Jumbotron
 setInterval (function() {
     document.getElementById('currentDay').innerHTML =  moment().format('MMMM Do YYYY, h:mm:ss a');
@@ -33,18 +29,26 @@ var timeArray = [
     time5pm
 ];
 
+loadScheduler();
+
 // check localStorage, get from localStorage
 function loadScheduler() {
     for (let el of timeArray) {
-        el.val(JSON.parse(localStorage.getItem(el.data("hour"))));
+        el.val(localStorage.getItem(el.data("hour")));
+        // el.val(JSON.parse(localStorage.getItem(el.data("hour"))));
 
     }
 };
 
-// save buttons
+
+// save buttons and save to localStorage 
+$('.saveBtn').on('click', function(event){
+   var saveClick = $(this).siblings('textarea');
+   var speciicTime = saveClick.data('hour');
+    JSON.stringify(localStorage.setItem(speciicTime, saveClick.val()));
+   
+});
 
 
 
-
-// update textarea based off the past, present, future
 
