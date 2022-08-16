@@ -47,9 +47,10 @@ THEN the saved events persist
 
 ## Important Links 
 
-* GitHub Link:
+* GitHub Link: https://github.com/MichaelZimm20/work-day-scheduler
 
-* Deployable Live Link: 
+* Deployable Live Link: https://michaelzimm20.github.io/work-day-scheduler/
+
 
 
 ## Screenshots
