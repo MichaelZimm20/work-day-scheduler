@@ -70,3 +70,40 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+
+/*Notification message styles START*/
+.notification {
+  display: none;
+  padding-bottom: 10px;
+  color: #ff6961;
+  text-transform: uppercase;
+  animation: 2s anim-notification ease-out infinite;
+  font-size: 35px;
+  font-style: italic;
+}
+
+.show {
+  display: block;
+}
+
+
+ /* lineup class and keyframes */
+@keyframes anim-notification {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+/*Notification message styles END*/

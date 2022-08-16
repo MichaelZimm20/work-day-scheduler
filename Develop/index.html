@@ -1,152 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <script src="https://kit.fontawesome.com/7c83ffe4d1.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
-
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-      <!--TODO: add clear entire day button-->
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <!-- 9am -->
-      <div class="row">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text hour justify-content-end">9AM</span>
-          </div>
-          <textarea class="form-control" aria-label="textarea" id="9AM" data-hour=":00 AM"></textarea>
-          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
-        </div>
-      </div>
-
-       <!-- 10am -->
-       <div class="row">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text hour justify-content-end">10AM</span>
-          </div>
-          <textarea class="form-control" aria-label="textarea" id="10AM" data-hour="10:00 AM"></textarea>
-          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
-        </div>
-      </div>
-
-      <!-- 11am -->
-      <div class="row">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text hour justify-content-end">11AM</span>
-          </div>
-          <textarea class="form-control" aria-label="textarea" id="11AM" data-hour="11:00 AM"></textarea>
-          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
-        </div>
-      </div>
-
-      <!-- 12PM -->
-      <div class="row">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text hour justify-content-end">12PM</span>
-          </div>
-          <textarea class="form-control" aria-label="textarea" id="12PM" data-hour="12:00 PM"></textarea>
-          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
-        </div>
-      </div>
-      
-      <!-- 1PM -->
-      <div class="row">
-       <div class="input-group">
-         <div class="input-group-prepend">
-           <span class="input-group-text hour justify-content-end">1PM</span>
-         </div>
-         <textarea class="form-control" aria-label="textarea" id="1PM" data-hour="1:00 PM"></textarea>
-         <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
-       </div>
-     </div>
-
-      <!-- 2PM -->
-      <div class="row">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text hour justify-content-end">2PM</span>
-          </div>
-          <textarea class="form-control" aria-label="textarea" id="2PM" data-hour="2:00 PM"></textarea>
-          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
-        </div>
-      </div>
-
-       <!-- 3PM -->
-       <div class="row">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text hour justify-content-end">3PM</span>
-          </div>
-          <textarea class="form-control" aria-label="textarea" id="3PM" data-hour="3:00 PM"></textarea>
-          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
-        </div>
-      </div>
-
-       <!-- 4PM -->
-       <div class="row">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text hour justify-content-end">4PM</span>
-          </div>
-          <textarea class="form-control" aria-label="textarea" id="4PM" data-hour="4:00 PM"></textarea>
-          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
-        </div>
-      </div>
-
-       <!-- 5PM -->
-       <div class="row">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text hour justify-content-end">5PM</span>
-          </div>
-          <textarea class="form-control" aria-label="textarea" id="5PM" data-hour="5:00 PM"></textarea>
-          <button class="saveBtn" type="button"><i>Save</i><span class="oi oi-data-transfer-download d-flex justify-content-center py-1 "></span></button>
-        </div>
-      </div>
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
 
 
+<!--Body Start -->
 
+<body>
+  <!-- JUMBOTRON START -->
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+    <!--Clear My Schedule button-->
+    <button class="btn btn-outline-success" id="clear-schedule">Clear My Schedule</button>
+  </header>
+  <!-- JUMBOTRON END -->
 
+  <!--Saved Notification-->
+  <section class="text-center notification" id="notify">Message Saved!</section>
 
-
-
-
-
-
-
-
+  <!--Container for TimeBlock Rows -->
+  <div class="container">
+    <!-- Timeblocks go here -->
+    <!-- 9am -->
+    <div id="hour-9" class="row time-block">
+      <div class="col-md-2 hour">9AM</div>
+      <textarea class="col-md-8 description"></textarea>
+      <button class="btn col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./js/script.js"></script>
-  </body>
+    <!-- 10am -->
+    <div id="hour-10" class="row time-block">
+      <div class="col-md-2 hour">10AM</div>
+      <textarea class="col-md-8 description"></textarea>
+      <button class="btn col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+    </div>
+
+    <!-- 11am -->
+    <div id="hour-11" class="row time-block">
+      <div class="col-md-2 hour">11AM</div>
+      <textarea class="col-md-8 description"></textarea>
+      <button class="btn col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+    </div>
+
+    <!-- 12PM -->
+    <div id="hour-12" class="row time-block">
+      <div class="col-md-2 hour">12PM</div>
+      <textarea class="col-md-8 description"></textarea>
+      <button class="btn col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+    </div>
+
+    <!-- 1PM -->
+    <div id="hour-13" class="row time-block">
+      <div class="col-md-2 hour">1PM</div>
+      <textarea class="col-md-8 description"></textarea>
+      <button class="btn col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+    </div>
+
+    <!-- 2PM -->
+    <div id="hour-14" class="row time-block">
+      <div class="col-md-2 hour">2PM</div>
+      <textarea class="col-md-8 description"></textarea>
+      <button class="btn col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+    </div>
+
+    <!-- 3PM -->
+    <div id="hour-15" class="row time-block">
+      <div class="col-md-2 hour">3PM</div>
+      <textarea class="col-md-8 description"></textarea>
+      <button class="btn col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+    </div>
+
+    <!-- 4PM -->
+    <div id="hour-16" class="row time-block">
+      <div class="col-md-2 hour">4PM</div>
+      <textarea class="col-md-8 description"></textarea>
+      <button class="btn col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+    </div>
+
+    <!-- 5PM -->
+    <div id="hour-17" class="row time-block">
+      <div class="col-md-2 hour">5PM</div>
+      <textarea class="col-md-8 description"></textarea>
+      <button class="btn col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+    </div>
+    
+  </div>
+
+  <!--Script files-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
